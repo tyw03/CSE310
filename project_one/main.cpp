@@ -6,7 +6,7 @@ long long int* bubblesort(long long int arr[], int num_of_elements) {
     for(int i=1; i<=num_of_elements-1; i++) {
         for(int j=num_of_elements-1; j>=i; j--) {
             if(arr[j] < arr[j-1]) {
-                int prev_j_value = arr[j];
+                long long int prev_j_value = arr[j];
                 arr[j] = arr[j-1];
                 arr[j-1] = prev_j_value;
             }
